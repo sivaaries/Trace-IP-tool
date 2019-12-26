@@ -18,7 +18,7 @@ class Tip(wx.Frame):
         self.Centre()
         self.SetBackgroundColour(wx.Colour('#ffffff'))
         icon = wx.Icon()
-        icon.CopyFromBitmap(wx.Bitmap("files\\tip.ico", wx.BITMAP_TYPE_ANY))
+        icon.CopyFromBitmap(wx.Bitmap("tip.ico", wx.BITMAP_TYPE_ANY))
         self.SetIcon(icon)      
         self.Bind(wx.EVT_PAINT, self.on_paint)
         self.Bind(wx.EVT_CLOSE, self._when_closed)
@@ -34,10 +34,10 @@ class Tip(wx.Frame):
         hbox4 = wx.BoxSizer(wx.HORIZONTAL)
         vbox = wx.BoxSizer(wx.VERTICAL)
 ############################################################################################### Icon for the Application
-        png = wx.Image('files\\Ico.png', wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+        png = wx.Image('Ico.png', wx.BITMAP_TYPE_ANY).ConvertToBitmap()
         self.pic = wx.StaticBitmap(self, -1, png, (5, 5), (png.GetWidth(), png.GetHeight()))
 ############################################################################################### Widgets
-        self.conntd = Animation('files\\scan.gif')
+        self.conntd = Animation('scan.gif')
         self.ctrl1 = AnimationCtrl(self, -1, self.conntd, pos=wx.Point(200,0))
         self.ctrl1.SetBackgroundColour(wx.Colour('#151f17'))        
         self.ctrl1.Stop()
