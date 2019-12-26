@@ -7,6 +7,6 @@ This Tool scans all the utilized IP in the Network
 
 --> Hit the Scan Button 
 	--> Sit Back & Relax for a while 
-		--> 'Viola!' all the IPs in the Network are scanned.
+		--> 'Voila!' all the IPs in the Network are scanned.
 
 * This Tool is Open to Use and develop.
